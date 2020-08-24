@@ -1,0 +1,241 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Matt Vaughn | Portfolio</title>
+        <style type="text/css">
+
+            @media screen and (min-width: 32rem) and (max-width: 48rem) {
+              html {
+                font-size: 15px;
+              }
+            }
+
+            @media screen and (min-width: 48rem) {
+              html {
+                font-size: 16px;
+              }
+            }
+
+            body {
+              line-height: 1.84;
+            }
+
+            p,
+            .splendor-p {
+              font-size: 1rem;
+              margin-bottom: 1.3rem;
+            }
+
+            h1,
+            .splendor-h1,
+            h2,
+            .splendor-h2,
+            h3,
+            .splendor-h3,
+            h4,
+            .splendor-h4 {
+              margin: 1.414rem 0 .5rem;
+              font-weight: inherit;
+              line-height: 1.42;
+            }
+
+            h1,
+            .splendor-h1 {
+              margin-top: 0;
+              font-size: 2.6666rem;
+            }
+
+            h2,
+            .splendor-h2 {
+              font-size: 1.9999rem;
+            }
+
+            h3,
+            .splendor-h3 {
+              font-size: 1.666rem;
+            }
+
+            h4,
+            .splendor-h4 {
+              font-size: 1.414rem;
+            }
+
+            h5,
+            .splendor-h5 {
+              font-size: 1.121rem;
+            }
+
+            h6,
+            .splendor-h6 {
+              font-size: .88rem;
+            }
+
+            small,
+            .splendor-small {
+              font-size: .707em;
+            }
+
+            @import url(http://fonts.googleapis.com/css?family=Merriweather:300italic,300);
+
+            html {
+              font-size: 18px;
+              max-width: 100%;
+            }
+
+            body {
+              color: #444;
+              font-family: 'Merriweather', Georgia, serif;
+              margin: 0;
+              max-width: 100%;
+            }
+
+
+            p, *:not(div):not(img):not(body):not(html):not(li):not(blockquote):not(p) {
+              margin: 0.25rem auto 0.25rem;
+              max-width: 36rem;
+              padding: .25rem;
+            }
+
+
+            blockquote p {
+              font-size: 1.5rem;
+              font-style: italic;
+              margin: 1rem auto 1rem;
+              max-width: 48rem;
+            }
+
+            ul {
+              padding: 0 !important;
+            }
+
+            li {
+              margin-left: 2rem;
+            }
+
+            li>p {
+              padding: 0 0.25rem;
+            }
+
+            h1 {
+              padding: 2rem 0 0 0 !important;
+            }
+
+            p {
+              color: #555;
+              height: auto;
+              line-height: 1.45rem;
+            }
+
+            pre,
+            code {
+              font-family: Menlo, Monaco, "Courier New", monospace;
+            }
+
+            pre {
+              background-color: #fafafa;
+              font-size: .8rem;
+              padding: 1.125em;
+            }
+
+            a,
+            a:visited {
+              color: #3498db;
+            }
+
+            a:hover,
+            a:focus,
+            a:active {
+              color: #2980b9;
+            }
+   
+        </style>
+    </head>
+    <body>
+
+<h1>Matt Vaughn | Portfolio</h1>
+
+<div style="display: flex; flex-flow: row wrap; justify-content: center; align-items: center;">
+<a href="https://github.com/mattttvaughn/" style="margin: 10px"><img src="./images/github.png" style="height: 3rem; width: 3rem" /></a>
+<a href="https://twitter.com/mattttvaughn" style="margin: 10px"><img src="./images/twitter.svg" style="height: 3rem; width: 3rem;" /></a>
+<a href="./resume.pdf" style="margin: 10px; text-decoration: none; color: white; border-radius: 4px; background: #222; padding: 0.5em">Resume (.pdf)</a>
+</div>
+
+<div style="display: flex; flex-flow: row nowrap; margin: 2rem;
+    justify-content: center; align-items: center">
+    <div>
+            <h2> <a href="https://play.google.com/store/apps/details?id=io.github.mattpvaughn.chronicle">Chronicle Audiobook Player</a></h2>
+
+            <p>My current big project. An audiobook client for self-hosted Plex media servers.</p>
+
+            <ul>
+                <li>Developed in Kotlin</li>
+                <li>Offers offline-first functionality via <code>WorkManager</code> and the repository pattern</li>
+                <li>Makes use of common libraries: <code>Retrofit</code> + <code>OkHttp</code>, coroutines, <code>Dagger2</code>, architecture components</li>
+                <li>4.5 stars on Google Play</li>
+            </ul>
+    </div>
+    <img src="images/chronicle_1.png" style="height: 75vh; padding: 5rem; width: auto">
+</div>
+
+<div style="display: flex; flex-flow: row-reverse nowrap; margin: 2rem;
+    justify-content: center; align-items: center">
+    <div>
+            <h2> <a
+                    href="https://play.google.com/store/apps/details?id=io.github.mattpvaughn.chronicle">UI Gradients App</a></h2>
+
+            <p>A little demo project I made, originally part of my "app a day" experiment. An Android client for <a href="https://uigradients.com/">UIGradients</a>. Displays a list of all available gradients and allows the user to view/copy colors to the clipboard. Tech stack:</p>
+
+            <ul>
+                <li>Dagger2</li>
+                <li>Retrofit + OkHttp + Moshi</li>
+                <li>Room (for request caching)</li>
+                <li>Kotlin + Coroutines</li>
+                <li>Jetpack ViewModel + Lifecycle</li>
+                <li>CoordinatorLayout</li>
+            </ul>
+    </div>
+    <video autoplay src="images/gradients.webm" style="padding: 5rem; height: 75vh; width: auto">
+</div>
+
+
+
+<div style="display: flex; flex-flow: row nowrap; margin: 2rem;
+    justify-content: center; align-items: center">
+    <div>
+            <h2> 10 apps in 10 days</h2>
+
+            <p>On a whim, I decided to try to make an app every day for
+            a month. Every day I would come up with a unique app idea,
+            design it, a build a new app, with the goal of exploring a new
+            element of the Android SDK every day.</p> 
+
+            <p>I was aiming to make a visually polished and useful app
+            every day, but the amount of boilerplate I ended up having to
+            write for each new project caused me to cancel the project
+            after 10 days.</p> 
+            
+            <p>A few things I learned:</p>
+
+            <ul>
+                <li>Custom view state saving (<a href="https://github.com/mattttvaughn/Pixelly">pixel art app, with demo gif</a>)</li>
+                <li><code>CoordinatorLayout</code> + <code>AppBarLayout</code> magic (<a href="https://github.com/mattttvaughn/Gungeon-Synergies">Game companion app</a>)</li>
+                <li>Flutter basics (<a href="https://github.com/mattttvaughn/App-Idea-Generator">Day #1 of Flutter</a>, <a href="https://github.com/mattttvaughn/Pasta-App">Day #2 of Flutter</a>)</li>
+            </ul>
+
+    </div>
+
+    <img src="images/pixelly.png" style="height: 75vh; padding: 5rem; width: auto">
+</div>
+
+
+<h2></h2>
+
+
+
+
+
+    </body>
+
+</html>
+
