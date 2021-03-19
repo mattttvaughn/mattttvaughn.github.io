@@ -9,12 +9,18 @@
               html {
                 font-size: 15px;
               }
+
+              video, img {
+                display: none;
+              }
             }
+
 
             @media screen and (min-width: 48rem) {
               html {
                 font-size: 16px;
               }
+
             }
 
             body {
@@ -209,9 +215,38 @@
     <video autoplay src="images/gradients.webm" style="padding: 5rem; height: 75vh; width: auto">
 </div>
 
-
-
 <div style="display: flex; flex-flow: row nowrap; margin: 2rem;
+    justify-content: center; align-items: center">
+    <div>
+            <h2>Iconstructor - Icon Pack Creator</h2>
+
+            <p>This is an old app that I don't support anymore, but it's too
+            cool not to show off. It provides a WYSIWYG front-end for
+            designing icons and then outputs an icon pack as an installable
+            .apk file.</p> 
+
+            <p>There are now a few apps with this functionality, but it was
+            the first one on the Play Store.</p> 
+            
+            <p>Some facts:</p>
+
+            <ul>
+                <li>Locally generated an icon pack as an installable .apk file</li>
+                <li>Achieved performance by redrawing in the background with AsyncTask</li>
+                <li>Heavy lifting mostly done via
+                    <code>
+                        Runtime.getRuntime().exec(...)
+                    </code>
+                </li>
+            </ul>
+    </div>
+
+   <video autoplay src="images/iconstructor.webm" style="padding: 5rem; height: 75vh; width: auto">
+</div>
+
+
+
+<div style="display: flex; flex-flow: row-reverse nowrap; margin: 2rem;
     justify-content: center; align-items: center">
     <div>
             <h2> 10 apps in 10 days</h2>
